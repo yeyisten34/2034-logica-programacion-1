@@ -6,6 +6,10 @@ console.log(numeroUsuario)
 if (numeroUsuario == numeroSecreto){
 alert(`Acertaste, el numero es: ${numeroUsuario}`);
 }else{
-    alert('fallaste');
+    if(numeroUsuario > numeroSecreto){
+        alert('El numero secreto es menor');
+    }else{
+        alert(' El numero secreto es mayor')
+    }
 }
 
