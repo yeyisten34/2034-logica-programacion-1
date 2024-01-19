@@ -1,5 +1,7 @@
 //Variables
-let numeroSecreto = Math.floor(Math.random()*10)+1;
+let numeroPosibilidades = parseInt(prompt('Que el numero secreto sea entre 1 y ?'))
+
+let numeroSecreto = Math.floor(Math.random()*numeroPosibilidades)+1;
 let numeroUsuario = 0;
 let intentos = 1;
 //let palabraVeces = 'vez';
@@ -7,7 +9,7 @@ let maximosIntentos = 3;
 
 
 while (numeroUsuario != numeroSecreto) {
-    numeroUsuario = parseInt(prompt("Me indicas un número entre 1 y 10 por favor:"));
+    numeroUsuario = parseInt(prompt(`Me indicas un número entre 1 y ${numeroPosibilidades} por favor:`));
 
     console.log(typeof(numeroUsuario));
     if (numeroUsuario == numeroSecreto) {
